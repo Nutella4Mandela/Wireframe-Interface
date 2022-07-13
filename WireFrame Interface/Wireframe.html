@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--title: text to appear in the page tab-->
+    <title>Interface</title>
+    <!-- metadata: machine readable, will not appear on the page - specify page description, keywords, author of the document, last modified, and other metadata -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="InterActiMation: A-Frame Scene Starter" />
+    <meta name="keywords" content="InterActiMation,A-Frame,aframe,webvr" />
+
+    <!--script: include the a-frame javascript-->
+    <script src="https://unpkg.com/aframe-orbit-controls@1.3.0/dist/aframe-orbit-controls.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    
+  </head>
+  <body>
+    <!--a-scene: references content in the script src to create the aframe scene, which includes a default camera and light-->
+    <a-scene vr-mode-ui="enabled: false" background="color: black">
+
+  <!-- Using the asset management system. -->
+      <!-- I made the camera fixed and implemented 2D entities inside the camera to make an interface-->
+     <a-entity camera position="0 1 0">
+       <!-- Play Game -->
+  <a-entity geometry="primitive: plane; height: 0.6; width: 0.6" position="-0.7 0.35 -1"
+            material="color: red; opacity: 0.3"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.2" position="-0.7 0.45 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.2" position="-0.7 0.246 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.25; width: 0.01" position="-0.6 0.35 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.25; width: 0.01" position="-0.8 0.35 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.2; width: 0.05" position="-0.56 0.375 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.2; width: 0.05" position="-0.84 0.375 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.05" position="-0.84 0.246 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.05" position="-0.56 0.246 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       
+       <!-- Data -->
+       <a-entity geometry="primitive: plane; height: 0.6; width: 0.6" position="0.7 0.35 -1"
+            material="color: yellow; opacity: 0.3"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.03; width: 0.2" position="0.7 0.24 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.18; width: 0.02" position="0.58 0.35 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.03; width: 0.25" position="0.695 0.45 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.21; width: 0.02" position="0.81 0.33 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.02; width: 0.1" position="0.7 0.37 -1"
+            material="color: white; opacity: 1"></a-entity>
+              <a-entity geometry="primitive: plane; height: 0.1; width: 0.02" position="0.75 0.41 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.02" position="0.65 0.41 -1"
+            material="color: white; opacity: 1"></a-entity>
+      <a-entity geometry="primitive: plane; height: 0.1; width: 0.02" position="0.65 0.28 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.02; width: 0.12" position="0.7 0.33 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.02" position="0.75 0.28 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.12" position="0.7 0.3 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.12" position="0.7 0.28 -1"
+            material="color: white; opacity: 1"></a-entity>
+       
+       
+       <!-- Library -->
+       <a-entity geometry="primitive: plane; height: 0.6; width: 0.6" position="0.7 -0.35 -1"
+            material="color: green; opacity: 0.3"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.2" position="0.7 -0.3 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.2" position="0.78 -0.35 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.2" position="0.72 -0.4 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.2" position="0.73 -0.25 -1"
+            material="color: white; opacity: 1"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.2" position="0.68 -0.2 -1"
+            material="color: white; opacity: 1"></a-entity>
+       
+       <!-- Options -->
+       <a-entity geometry="primitive: plane; height: 0.6; width: 0.6" position="-0.7 -0.35 -1"
+            material="color: blue; opacity: 0.3"></a-entity>
+       <a-entity geometry="primitive: circle; radius: 0.13" position="-0.7 -0.35 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: circle; radius: 0.04" position="-0.7 -0.35 -1"
+            material="color: blue; opacity: 1"></a-entity> 
+        <a-entity geometry="primitive: plane; height: 0.1; width: 0.1" position="-0.7 -0.23 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.1" position="-0.7 -0.47 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.1" position="-0.58 -0.35 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.1" position="-0.82 -0.35 -1"
+            material="color: white; opacity: 1"></a-entity>
+       
+       <!-- Top Bar -->
+       <a-entity geometry="primitive: plane; height: 0.2; width: 4" position="0 -0.8 -1"
+            material="color: blue; opacity: 0.5"></a-entity>
+       
+       <!-- Off Switch -->
+       <a-entity geometry="primitive: circle; radius: 0.05" position="1.3 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: circle; radius: 0.035" position="1.3 -0.77 -1"
+            material="color: blue;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.06; width: 0.03" position="1.3 -0.74 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       
+       <!-- Clock -->
+       <a-entity geometry="primitive: circle; radius: 0.05" position="0.95 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: circle; radius: 0.04" position="0.95 -0.77 -1"
+            material="color: blue;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.05; width: 0.01" position="0.95 -0.75 -1"
+            material="color: white; opacity: 1"></a-entity> 
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.025" position="0.965 -0.77 -1" 
+            material="color: white; opacity: 1"></a-entity> 
+       
+       <!-- Friends -->
+       <a-entity geometry="primitive: circle; radius: 0.05" position="0.58 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: circle; radius: 0.02" position="0.58 -0.78 -1"
+            material="color: blue;"></a-entity>
+       <a-entity geometry="primitive: circle; radius: 0.02" position="0.58 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: circle; radius: 0.01" position="0.558 -0.76 -1"
+            material="color: blue;"></a-entity>
+       <a-entity geometry="primitive: circle; radius: 0.01" position="0.6 -0.76 -1"
+            material="color: blue;"></a-entity>
+       
+       <!-- Notifications -->
+       <a-entity geometry="primitive: circle; radius: 0.012" position="0.2 -0.81 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.07; width: 0.025" position="0.2 -0.75 -1"
+            material="color: white;"></a-entity>
+       
+       <!-- Wi-fi -->
+       <a-entity geometry="primitive: triangle; vertexA: -0.02 -0.03; vertexB: 0.0 -0.06; vertexC: 0.02 -0.03;" position="-0.2 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.06" position="-0.2 -0.785 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.08" position="-0.2 -0.765 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.1" position="-0.2 -0.745 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.12" position="-0.2 -0.725 -1"
+            material="color: white;"></a-entity>
+       
+       <!-- Achievements -->
+       <a-entity geometry="primitive: circle; radius: 0.05" position="-0.58 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.07" position="-0.57 -0.77 -1" rotation="0 0 45"
+            material="color: blue;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.035" position="-0.605 -0.775 -1" rotation="0 0 -45"
+            material="color: blue;"></a-entity>
+       
+       
+       <!-- Messages -->
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.1" position="-0.95 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.08" position="-0.95 -0.75 -1"
+            material="color: blue;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.08" position="-0.95 -0.77 -1"
+            material="color: blue;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.01; width: 0.08" position="-0.95 -0.79 -1"
+            material="color: blue;"></a-entity>
+       
+       <!-- Calendar -->
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.1" position="-1.3 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.07; width: 0.07" position="-1.3 -0.78 -1"
+            material="color: blue;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.005; width: 0.1" position="-1.3 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.005; width: 0.1" position="-1.3 -0.79 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.005" position="-1.32 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.005" position="-1.3 -0.77 -1"
+            material="color: white;"></a-entity>
+       <a-entity geometry="primitive: plane; height: 0.1; width: 0.005" position="-1.28 -0.77 -1"
+            material="color: white;"></a-entity>
+       
+       
+       <!-- Bottom Bar -->
+       <a-entity geometry="primitive: plane; height: 0.2; width: 4" position="0 0.8 -1"
+            material="color: blue; opacity: 0.5"></a-entity>
+       
+       <!-- Text -->
+</a-entity>
+      <a-entity position="0.01 1.15 -1"
+           text="font:https://cdn.aframe.io/fonts/Exo2Bold.fnt; width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: PLAY GAME;">
+ </a-entity>
+      <a-entity position="1.56 1.15 -1"
+           text="font:https://cdn.aframe.io/fonts/Exo2Bold.fnt; width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: DATA; ">
+ </a-entity>
+      <a-entity position="0.08 0.45 -1"
+           text="font:https://cdn.aframe.io/fonts/Exo2Bold.fnt; width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: OPTIONS; ">
+ </a-entity>
+      <a-entity position="1.48 0.45 -1"
+           text="font:https://cdn.aframe.io/fonts/Exo2Bold.fnt; width: 2; lineHeight: 50; letterSpacing: 5; color: white; value: LIBRARY; ">
+ </a-entity>
+      
+      <!-- Wireframe cube -->
+      <a-entity
+        position="0 1 -6"
+        geometry="radius: 0.3"
+        material="wireframe: true; src: https://cdn.glitch.me/01f6a886-fce1-4a21-a732-369912cc4f1e%2Frainbow-sq.jpg?v=1637088509212"
+        animation__rot="property: rotation; to: 1000 1000 360; loop: true; dur: 8000; dir: alternate; easing: easeInOutSine;"
+        
+      >
+        <!-- White Sphere -->
+        <a-entity
+              id="sphere"
+              geometry="primitive: sphere; radius: 0.3"
+              position="0 -1 0"
+              material="color: white; emissive: white; emissiveIntensity: 1"
+                 >
+        </a-entity>
+        
+        <!-- Purple Sphere -->
+      <a-entity
+              id="sphere"
+              geometry="primitive: sphere; radius: 0.3"
+              position="0 0 -1"
+              material="color: purple; emissive: purple; emissiveIntensity: 1"
+               
+                 ></a-entity>
+        
+        <!-- Red Sphere -->
+      <a-entity
+              id="sphere"
+              geometry="primitive: sphere; radius: 0.3"
+              position="0 1 0"
+              material="color: red; emissive: red; emissiveIntensity: 1"
+               
+                 ></a-entity>
+        
+        <!-- Yellow Sphere -->
+        <a-entity
+              id="sphere"
+              geometry="primitive: sphere; radius: 0.3"
+              position="0 0 1"
+              material="color: yellow; emissive: yellow; emissiveIntensity: 1"
+               
+                 ></a-entity>
+        
+        <!-- Green Sphere -->
+      <a-entity
+              id="sphere"
+              geometry="primitive: sphere; radius: 0.3"
+              position="1 0 0"
+              material="color: green; emissive: green; emissiveIntensity: 1"
+               
+                 ></a-entity>
+        
+        <!-- Cyan Sphere -->
+        <a-entity
+              id="sphere"
+              geometry="primitive: sphere; radius: 0.3"
+              position="-1 0 0"
+              material="color: cyan; emissive: cyan; emissiveIntensity: 1"
+               
+                 ></a-entity>
+        
+        <!-- Rainbow Sphere -->
+        <a-entity
+              id="sphere"
+              geometry="primitive: sphere; radius: 0.3"
+              position="0 0 0"
+              material="src: https://cdn.glitch.global/01f6a886-fce1-4a21-a732-369912cc4f1e/rainbow-sq.jpg?v=1641513802683"
+               
+                 ></a-entity></a-entity>
+      
+      <!-- Huge Wireframe Sphere -->
+      <a-entity
+        id="Wireframe"
+        geometry="primitive: sphere; radius: 8"
+        position="0 1 -7"
+        rotation="-180 -180 0"
+        material="wireframe: true; color: blue"
+        animation__rot="property:rotation; to: 0 180 180; dur: 100000; loop: true; easing: linear"
+      ></a-entity>
+      
+      
+    </a-scene>
+  </body>
+</html>
